@@ -1,0 +1,148 @@
+
+@font-face{
+    font-family: Azonix;
+    src:url(./Azonix-1VB0.otf)
+}
+*{
+    box-sizing: border-box;
+    font-family: Azonix;
+}
+.header{
+    padding: 20px;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(252,202,95);
+    font-weight: bold;
+    backdrop-filter: blur(3px);
+}
+.container{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 5%;
+    background-image: linear-gradient(rgba(0,0,0,0.15));
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    background: border-box;
+    position: relative;
+    text-align: -webkit-center;
+}
+.coin{
+    padding: 10px;
+    width: 100%;
+    border-radius: 35px;
+}
+.amount{
+    padding: 10px;
+    border: 0px;
+    box-shadow: 0 0 15 4 rgba(0,0,0,0.15);
+    width: 100%;
+}
+.btn{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(30, 31, 32);
+    color: rgb(252,202,95);
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: #c7a45a;
+    color: black;
+}
+.error{
+    text-align: center;
+    padding: 0.75em;
+    font-size: large;
+    background-color: #ecdfc2;
+    margin-left: 12.5em;
+    margin-right: 12.5em;
+    color: rgb(155, 55, 48);
+    border-radius: 25px;
+    border: 5px solid rgb(155, 55, 48);
+    font-weight: bold;
+}
+.succ{
+    text-align: center;
+    padding: 0.75em;
+    font-size: large;
+    background-color: rgb(223, 191, 122);
+    margin-left: 12.5em;
+    margin-right: 12.5em;
+    color: rgb(56, 53, 82);
+    border-radius: 25px;
+    border: 5px solid rgb(56, 53, 82);
+    font-weight: bold;
+}
+.cgecko{
+    padding: 7.5px;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(252,202,95);
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(1px);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.cpic{
+    width: 200px;
+}
+@media only screen and (max-width : 700px){
+    .header{
+        padding: 10px 5px;
+        background-size: 8%;
+        font-size: 167.5%;
+        color: black;
+        font-size: 30px;
+    }
+    .btn{
+        background-color: rgb(252,202,95);
+        color: rgb(30, 31, 32);
+    }
+    .btn:hover{
+        background-color: black;
+        color: #c7a45a;
+    }
+    body{
+        background-image: url(../images/213455.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .succ{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .error{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .cgecko{
+        padding: 6.5px;
+        font-size: large;
+        margin-left: 25%;
+        margin-right: 25%;
+        color: black;
+    }
+    .coin{
+        font-size: 10px;
+    }
+    .cpic{
+        width: 200px;
+    }
+}
+@media only screen and (min-width : 700px){
+    body{
+        background-image: url(../images/176-1767732_this-week-in-cryptocurrency-ethereum-piece.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
