@@ -1,5 +1,5 @@
-<?php require "options.php" ?> //add the options.php script to the index.php
-<!DOCTYPE html> //basic html boilerplate
+<?php require "options.php" ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,13 @@
     <br>
     <div class="container">
     <form action="index.php" method="post">
-        <?php $data = extract_coins(); echo options($data); ?> // the extract_coins() and options() functions are in options.php
+        <?php $data = extract_coins(); echo options($data); ?>
         <br>
         <br>
-        <input class="amount" step="any" type="number" name="amount" id="amount" placeholder="Enter Amount"> //amount input
+        <input class="amount" step="any" type="number" name="amount" id="amount" placeholder="Enter Amount">
         <br>
         <br>
-        <input class="btn" value="Convert" type="submit" name="done"> //submit button
+        <input class="btn" value="Convert" type="submit" name="done">
         <br>
         <br>
     </form>
