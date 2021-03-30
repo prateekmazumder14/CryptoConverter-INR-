@@ -60,7 +60,7 @@
             }
         }
     ?>
-    <footer> //footer for the API website
+    <footer>
     <div class="cgecko">Powered By <a href="http://www.coingecko.com/" target="_blank"><img class="cpic" src="./images/CoinGecko_Logo_Full-1024x320.png" alt="CoinGecko"></a></div>
     </footer>
 </body>
