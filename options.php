@@ -4,6 +4,9 @@
         $curl = curl_init($url);
         curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
         $res = curl_exec($curl);
+        if(curl_errno($curl)){
+            return array("id"=> "NULL","name" => "Error : Could not find any coin","symbol"=>"NULL");
+        }
         $arr = json_decode($res,true);
         return $arr;
     }
